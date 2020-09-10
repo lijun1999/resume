@@ -1,0 +1,120 @@
+* {
+    -webkit-transition: all 1s;
+  }
+  
+  a {
+    color: #eee;
+  }
+  
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #container {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  #style-box {
+    flex: 1;
+  }
+  
+  #work-box {
+    flex: 1;
+  }
+  
+  .writecode {
+    /* white-space: normal; */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: coder 2s steps(44) 1s normal both;
+    -webkit-animation: coder 2s;
+  }
+  
+  @keyframes coder {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  .attribute {
+    color: #64D5EA;
+  }
+  
+  .selector {
+    color: #E69F0F;
+  }
+  
+  .introduce {
+    color: #8f8c81;
+  }
+  
+  .box {
+    min-height: 30px;
+    max-height: 90%;
+    overflow: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1),
+      -20px -20px 30px rgba(255, 255, 255, .1);
+    margin: 30px;
+  }
+  
+  /* 设置滚动条 */
+  .box::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 4px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+    scrollbar-arrow-color: red;
+  
+  }
+  
+  .box::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    scrollbar-arrow-color: red;
+  }
+  
+  .box::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+    border-radius: 0;
+    background: transparent;
+  }
+  
+  
+  .box:hover {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2),
+      0 0 0 rgba(255, 255, 255, .2),
+      inset 20px 20px 30px rgba(0, 0, 0, 0.1),
+      inset -20px -20px 30px rgba(255, 255, 255, .1);
+  }
+  
+  .lr-box {
+    display: flex;
+    padding: 3px 0;
+  }
+  
+  .lr-box-left {
+    flex: 1;
+  }
+  
+  .project-title {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  
+  .project-time {
+    font-size: 12px;
+    padding-bottom: 5px 0;
+  }
