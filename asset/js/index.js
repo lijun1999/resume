@@ -199,7 +199,7 @@ class RESUME {
 	}
 	load(code, second) {
 		const id = this._id;
-		let _second = second ? second : 500;
+		let _second = second ? second : 1000;
 		_second = time + _second;
 		setTimeout(function () {
 			$("#" + id).append(code);
